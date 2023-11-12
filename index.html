@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autobazar</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        /* Add additional custom styles here if needed */
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Autobazar</a>
+    </nav>
+
+    <!-- Content section -->
+    <div class="container mt-4">
+
+        <!-- Bootstrap Typography -->
+        <h1 class="display-4">Welcome to Autobazar</h1>
+        <p class="lead">Explore our latest car listings and find your perfect vehicle.</p>
+
+        <!-- Collapsable Text -->
+        <div class="accordion" id="collapsableText">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Read More
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#collapsableText">
+                    <div class="card-body">
+                        Additional details about our Autobazar.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sections - Paragrafs as Accordion -->
+        <div id="sectionsAccordion">
+            <h2 class="mt-4">Car Brands</h2>
+            <div class="accordion" id="carBrandsAccordion">
+                <!-- Add your sections here as needed -->
+            </div>
+        </div>
+
+        <!-- Lists -->
+        <h2 class="mt-4">Top Car Models</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Model 1</li>
+            <li class="list-group-item">Model 2</li>
+            <li class="list-group-item">Model 3</li>
+        </ul>
+
+        <!-- Carousel -->
+        <h2 class="mt-4">Featured Cars</h2>
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <!-- Add your carousel items here as needed -->
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true">
+            <!-- Add your modal content here -->
+        </div>
+
+        <!-- Table -->
+        <h2 class="mt-4">Car Specifications</h2>
+        <table class="table">
+            <!-- Add your table content here -->
+        </table>
+
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
